@@ -3,19 +3,6 @@ ESX = exports.es_extended:getSharedObject()
 -- ox inventory
 local ox_inventory = exports.ox_inventory
 
---[[ -- อัพเดทเช็คหน่วยงาน
-local PlayerData              = {}
-
-CreateThread(function()
-    ESX.PlayerData = ESX.GetPlayerData()
-end)
-
-RegisterNetEvent('esx:setJob')
-AddEventHandler('esx:setJob', function(job)
-	ESX.PlayerData.job = job
-end)
-]]
-
 CreateThread(function()
     -- body
     for k, v in pairs(Config.TeleportList) do
