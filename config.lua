@@ -34,5 +34,5 @@ Config.TeleportList = {
 }
 
 Config.Notification = function(title, text, time, type)
-    exports['brutal_notify']:SendAlert(title, text, time, type)
+    exports['okokNotify']:Alert(title, text, time, type)
 end
